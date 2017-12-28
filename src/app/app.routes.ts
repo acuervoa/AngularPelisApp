@@ -6,8 +6,10 @@ import { DetailsComponent } from "./components/details/details.component";
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'details', component: DetailsComponent },
   { path: 'search', component: SearchComponent },
+  { path: 'search/:texto', component: SearchComponent },
+  { path: 'pelicula/:id/:pag', component: DetailsComponent },
+  { path: 'pelicula/:id/:pag/:busqueda', component: DetailsComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
