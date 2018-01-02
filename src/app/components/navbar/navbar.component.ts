@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
             return;
         }
 
-        console.log(texto);
+        //console.log(texto);
         this.router.navigate(['search', texto]);
 
     }
